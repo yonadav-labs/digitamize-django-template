@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load humanize %}
+
+{% block navbar_search_form %}{% endblock %}
+
+{% block main %}
+<div class="col-md-offset-1 col-md-10">
+	<h1>{{ product.title }}</h1>
+    <img src="{% static 'media' %}/{{ product.image }}" class="img-responsive">
+    <div class="price">${{ product.price|floatformat:2|intcomma }}</div>
+    <div>
+        {{ product.description }}
+    </div>
+</div>
+{% endblock %}
