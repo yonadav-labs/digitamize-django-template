@@ -1,7 +1,8 @@
-digitamize-django
+## Purpose
+
+Similar project with gigster.com
+It has CMS backend (Mezzanine)
+This is django-template version of digitamize
+It is hosted on docker
 
 
-- Administrator site:
-	localhost:8000/admin
-
-	root/newfirst
